@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron: '*/5 * * * *' # run every 5 mins
+    - cron: '*/10 * * * *' # run every 5 mins
   repository_dispatch: # run manually
     types: [check-link]
 
@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Broken Link Check
-        uses: technote-space/broken-link-checker-action@v2.2.4
+        uses: technote-space/broken-link-checker-action@v2

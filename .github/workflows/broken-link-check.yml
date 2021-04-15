@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron: '* * * * *' # At 10:00 on Saturday.
+    - cron: '0 10 * * 6' # At 10:00 on Saturday.
 
 name: Check markdown links
 jobs:
@@ -12,4 +12,4 @@ jobs:
         uses: ruzickap/action-my-broken-link-checker@v2.2.0
         with:
           url: https://claudiofus.github.io/
-          cmd_params: "--one-page-only --color=always --exclude=linkedin.com"  # Check just one page
+          cmd_params: "--one-page-only --color=always"  # Check just one page

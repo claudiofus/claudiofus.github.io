@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron: '*/10 * * * *' # run every 5 mins
+    - cron: '*/5 * * * *' # run every 5 mins
   repository_dispatch: # run manually
     types: [check-link]
 
@@ -12,3 +12,6 @@ jobs:
     steps:
       - name: Broken Link Check
         uses: technote-space/broken-link-checker-action@v2
+        with:
+          TARGET: 'https://claudiofus.github.io/'
+          RECURSIVE: true

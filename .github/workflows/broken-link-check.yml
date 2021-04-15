@@ -4,13 +4,12 @@ on:
   repository_dispatch: # run manually
     types: [check-link]
 
-name: Broken Link Check
 broken_link_checker_job:
   runs-on: ubuntu-latest
   name: Check for broken links
   steps:
   - name: Check for broken links
     id: link-report
-    uses: elliotforbes/broken-link-checker@1.0.2
+    uses: elliotforbes/broken-link-checker@1.0.3
     with:
-      url: 'https://tutorialedge.net'
+      url: 'https://claudiofus.github.io/'

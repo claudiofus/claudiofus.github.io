@@ -9,7 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check
-        uses: ruzickap/action-my-broken-link-checker@v2.2.0
+        uses: ruzickap/action-my-broken-link-checker@v2.2.1
         with:
           url: https://claudiofus.github.io/
-          cmd_params: "--one-page-only --color=always"  # Check just one page
+          cmd_params: "--one-page-only --color=always --exclude=linkedin.com --exclude=fonts.googleapis.com --verbose --skip-tls-verification"  # Check just one page
+          debug: true

@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron: '0 11 * * 0' # At 10:00 on Sunday.
+    - cron: '30 11 * * 0' # At 11:30 on Sunday.
 
 name: Check markdown links
 jobs:

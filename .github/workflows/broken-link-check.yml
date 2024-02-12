@@ -13,9 +13,5 @@ jobs:
         uses: ruzickap/action-my-broken-link-checker@v2.5.0
         with:
           url: https://claudiofus.github.io/
-          cmd_params: "--buffer-size=16384 --one-page-only --color=always --exclude=linkedin.com --exclude=fonts.googleapis.com --verbose --skip-tls-verification"  # Check just one page
+          cmd_params: "--buffer-size=16384 --one-page-only --color=always --exclude=claudiofus.github.io/Menu%20panini%20senza%20prezzi.pdf --exclude=linkedin.com --exclude=fonts.googleapis.com --verbose --skip-tls-verification"  # Check just one page
           debug: true
-          exclude:
-            /Menu%20panini%20senza%20prezzi.pdf
-            /Menu%20bar%20senza%20prezzi.pdf
-            /Menu%20ristorante%20senza%20prezzi.pdf
